@@ -1,0 +1,182 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff0000;
+}
+
+.hero {
+    background: url('Hintergrundbild.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    margin-top: 100px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Schwarze Umrandung */
+}
+
+.text-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.content-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Mehr Abstand zwischen den Videos */
+    justify-content: center;
+}
+
+.gallery iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-box {
+        padding: 15px;
+    }
+
+    .gallery iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-section {
+        padding: 1rem;
+    }
+}
